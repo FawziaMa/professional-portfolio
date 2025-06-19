@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Goals – Fawzia Masud</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <article>
+        <h1>Fawzia Masud</h1>
+        <p>Email: <span>mfawzia20@gmail.com</span> | Phone: <span>(571) 733-1845</span></p>
+    </article>
+    </header>
+
+  <nav>
+
+    <a href="resume.html">Resume</a>
+    <a href="coverLetter.html">Cover Letter</a>
+  </nav>
+
+  <main>
+    <section id="career-goals">
+        <h2 class="section-title">Career Goals</h2>
+        <p>My long-term goal is to build a strong foundation in both software development and quality assurance. I aim to design and implement scalable, automated testing solutions that support continuous integration and delivery.</p>
+        <br>
+        <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+            <div>
+              <h3>Skills Development</h3>
+              <ul>
+                <li>Proficiency in automation frameworks like Cypress and Playwright.</li>
+                <li>Developing coding expertise in languages such as JavaScript and Python.</li>
+                <li>Integrating test automation into CI/CD pipelines for faster feedback loops.</li>
+              </ul>
+              
+              <h3>Personal Milestones</h3>
+              <ul>
+                <li>Achieve certifications in cloud platforms (AWS) and test automation.</li>
+                <li>Contribute to open-source QA projects and technical blogs.</li>
+                <li>Collaborate with and learn from experienced SDETs and developers.</li>
+              </ul>
+            </div>
+          
+            <img src="assests/pexels-djordje-petrovic-590080-2102416.jpg" alt="Software development team collaborating" style="width: 100%; max-width: 300px; height: auto; flex-shrink: 0;">
+        </div>
+        <br>
+        <h3>Long-Term Vision</h3>
+        <p>My long-term goal is to transition into an SDET role and deepen my expertise in automation, coding, and software quality engineering.</p>
+    </section>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rRA7c9ImgNw?si=JuMLxi9ctpr9kTFu" title="SDET - Software developer engineer in test role explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>If you want to get in touch, please fill out the form below:</p>
+      <form action="https://wp.zybooks.com/form-viewer.php" method="POST" id="contact-form">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="company-name">Company Name</label>
+        <input type="text" id="company-name" name="company-name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="phone" id="phone" name="phone">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <p><label for="preferred-contact">Preferred Contact Method</label></p>
+        <div class="radio-group">
+          <input type="radio" id="am" name="contact-time" value="a.m.">
+          <label for="am">A.M.</label>
+        
+          <input type="radio" id="pm" name="contact-time" value="p.m.">
+          <label for="pm">P.M.</label>
+        
+          <input type="radio" id="anytime" name="contact-time" value="anytime">
+          <label for="anytime">Anytime</label>
+        </div>
+        
+        <br>
+
+       <p><label for="preferred-contact">Preferred Contact Method</label></p> 
+        <select id="preferred-contact" name="preferred-contact">
+          <option value="phone">Phone</option>
+          <option value="email">Email</option>
+          <option value="text">Text</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <script>
+        const form = document.getElementById('contact-form')
+        form.addEventListener('submit', function(event) {
+            form.reset()
+        })
+    </script>
+      
+  </main>
+
+  <footer>
+    <article>
+      <p>&copy; 2025 Fawzia Masud | <a href="mailto:mfawzia20@gmail.com">Email me</a></p>
+      <div id="current-date"></div>
+    </article>
+  </footer>
+  <script>
+    const today = new Date();
+    document.getElementById('current-date').textContent = today.toDateString()
+    console.log("Today's date is: " + today.toDateString())
+  </script>
+
+</body>
+</html>

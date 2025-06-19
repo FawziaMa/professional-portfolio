@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume - Fawzia Masud</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <article>
+      <h1>Fawzia Masud</h1>
+      <p>Email: <span>mfawzia20@gmail.com</span> | Phone: <span>(571) 733-1845</span></p>
+    </article>
+  </header>
+
+  <nav>
+    <a href="careerGoals.html">Career Goals</a>
+    <a href="coverLetter.html">Cover Letter</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <hr>
+      <p>Detail-oriented Software QA Engineer with<strong> 7 years</strong> of experience ensuring the quality and reliability of web and mobile 
+        applications through manual and automated testing. Skilled in identifying bugs, improving processes, and collaborating with 
+        cross-functional teams to deliver seamless user experiences. Passionate about building efficient test strategies and continuously 
+        improving product quality. Experienced with tools like Selenium, Postman, JIRA, and CI/CD pipelines.</p>
+    </section>
+    <br>
+
+    <section id="experience">
+      <h2 class="section-title">Employment History</h2>
+      <hr>
+
+      <article class="job-entry">
+        <h3 class="job-title">Lead Software QA Engineer</h3>
+        <p class="company-location"><em>Code/+/Trust — Charleston, SC</em></p>
+        <p class="job-dates"><em>May 2023 – Present</em></p>
+        <ul class="job-responsibilities">
+          <li>Established and executed a Quality Assurance process, optimizing product quality and reducing defects.</li>
+          <li>Participated in requirements gathering and review to ensure testability of features.</li>
+          <li>Conducted in-depth research and testing of AI capabilities in the incorporation of AI-driven features.</li>
+          <li>Implemented Cypress and Playwright to enhance automation testing across projects.</li>
+          <li>Conducted performance and load testing using JMeter and LoadNinja to identify and address performance issues.</li>
+        </ul>
+      </article><br>
+
+      <article class="job-entry">
+        <h3 class="job-title">Software Test Engineer II (Mobile)</h3>
+        <p class="company-location"><em>Groupon — Chicago, IL</em></p>
+        <p class="job-dates"><em>Feb 2021 – Jan 2023</em></p>
+        <ul class="job-responsibilities">
+          <li>Functional, UI, and API testing on Android/iOS/web apps</li>
+          <li>Led app release testing and collaborated across teams and time zones</li>
+          <li>Performing functional, UI, and API testing on Android OS and devices</li>
+          <li>Developed and implemented test cases to ensure software met functional and non-functional requirements</li>
+          <li>Effectively communicate and work closely with Product and Development, to relay test case status, discuss concerns and risk items, drive comprehensive test coverage, and assure general team alignment</li>
+          <li>Work cross-functionally across time zones to participate in daily stand-up, product reviews and sprint planning meetings</li>
+        </ul>
+      </article><br>
+
+      <article class="job-entry">
+        <h3 class="job-title">Software QA Engineer</h3>
+        <p class="company-location"><em>Sigma Software — Washington, D.C.</em></p>
+        <p class="job-dates"><em>May 2017 – Feb 2021</em></p>
+        <ul class="job-responsibilities">
+          <li>Analyzing requirements, writing and reviewing test cases, running test cases and analyzing test results</li>
+          <li>Performed testing of mobile (iOS, Android) and web applications across different platforms and devices</li>
+          <li>Performed smoke and regression testing on major functionalities of the application</li>
+          <li>Bug logging and tracking through Jira, verifying bug fixes, following until resolved</li>
+          <li>Interacted with developers to follow up on defects and issues</li>
+        </ul>
+      </article><br>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <hr>
+      <table>
+        <caption>Key Technical Skills</caption>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Tools/Technologies</th>
+            <th>Proficiency</th>
+            <th>Experience (Years)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Automation & Testing</td>
+            <td>Cypress, Selenium, JUnit, Appium</td>
+            <td>Advanced</td>
+            <td>5+</td>
+          </tr>
+          <tr>
+            <td>Languages & CI/CD</td>
+            <td>Python, JavaScript, Git, Jenkins</td>
+            <td>Intermediate</td>
+            <td>3–4</td>
+          </tr>
+          <tr>
+            <td>API & Performance</td>
+            <td>Postman, REST, JMeter, TestRail</td>
+            <td>Intermediate</td>
+            <td>3+</td>
+          </tr>
+        </tbody> 
+      </table>
+    </section>
+    <br>
+
+    <section id="resources">
+      <h2 class="section-title">Resources & Highlights</h2>
+      <hr>
+      <p>You can find more about me here:</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/fawzia-masud" target="_blank">LinkedIn Profile</a></li>
+        <li><a href="https://github.com/FawziaMa" target="_blank">GitHub Portfolio</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <article>
+      <p>&copy; 2025 Fawzia Masud | <a href="mailto:mfawzia20@gmail.com">Email me</a></p>
+      <div id="current-date"></div>
+    </article>
+  </footer>
+
+  <script>
+    const today = new Date();
+    document.getElementById('current-date').textContent = today.toDateString()
+    console.log("Today's date is: " + today.toDateString());
+  </script>
+
+</body>
+</html>

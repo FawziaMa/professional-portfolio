@@ -1,0 +1,335 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+background-color: #f4f4f4;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #333;
+line-height: 1.6;
+}
+
+/* Header */
+header {
+background-color: #2c3e50;
+color: white;
+text-align: center;
+padding: 40px 20px;
+border-bottom: 5px solid #ecf0f1;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+font-size: 3em;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 10px;
+letter-spacing: 1.5px;
+}
+
+header .tagline {
+font-size: 1.2em;
+font-style: italic;
+color: #f39c12;
+margin: 10px 0;
+}
+
+header p span {
+font-weight: 600;
+color: #ecf0f1;
+}
+
+
+/* Navigation Tabs */
+nav {
+background-color: #2c3e50;
+display: flex;
+justify-content: center;
+gap: 10px;
+padding: 10px 0;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+background-color: #34495e;
+color: #ecf0f1;
+text-decoration: none;
+padding: 12px 20px;
+border-radius: 10px 10px 0 0;
+font-size: 16px;
+font-weight: 600;
+transition: all 0.3s ease;
+position: relative;
+top: 0;
+}
+
+nav a:hover,
+nav a:focus {
+background-color: #f39c12;
+color: #2c3e50;
+top: -3px;
+transform: scale(1.05);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Active Tab Styling */
+nav a.active {
+background-color: #f39c12;
+color: #2c3e50;
+font-weight: 700;
+box-shadow: inset 0 -3px 0 #e67e22;
+cursor: default;
+}
+
+/* Main Content */
+main {
+padding: 40px 20px;
+max-width: 1000px;
+margin: 30px auto;
+background-color: #fff;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Sections */
+
+section h2 {
+font-size: 1.8em;
+color: #2c3e50;
+margin-bottom: 12px;
+}
+
+.section-title {
+font-size: 2.2em;
+margin-top: 0px;
+}
+
+hr {
+border-top: 1px solid #ccc;          
+margin: 10px auto 30px
+}
+
+
+section h3 {
+font-size: 1.5em;
+color: #34495e;
+margin-top: 20px;
+}
+
+
+section p {
+font-size: 1.05rem;
+color: #444;
+line-height: 1.7;
+margin-bottom: 16px;
+}
+
+section strong {
+color: #2c3e50;
+}
+
+section mark {
+background-color: #fef3c7;
+color: #0f0c36;
+font-weight: bold
+}
+
+
+/* Job Entries */
+.job-entry {
+background: #fff;
+padding: 15px 20px;
+border-left: 5px solid #f39c12;;
+margin-bottom: 20px;
+border-radius: 6px;
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.job-title {
+font-size: 1.3rem;
+font-weight: 600;
+margin-bottom: 5px;
+}
+
+.company-location,
+.job-dates {
+font-size: 0.95rem;
+color: #7f8c8d;
+margin-bottom: 4px;
+}
+
+.job-responsibilities {
+padding-left: 20px;
+margin-top: 10px;
+}
+
+.job-responsibilities li {
+margin-bottom: 8px;
+}
+
+ul {
+list-style-type: disc;
+padding-left: 40px;
+}
+
+ul>li {
+margin: 5px 0;
+font-size: 1em;
+}
+
+/* Skills Table */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 1rem;
+background: white;
+box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+border-radius: 8px;
+overflow: hidden;
+}
+
+caption {
+text-align: center;
+padding: 10px;
+font-weight: bold;
+background-color: #f0f2f5;
+color: #2c3e50;
+}
+
+th, td {
+padding: 12px 15px;
+text-align: left;
+border-bottom: 1px solid #eee;
+}
+
+thead {
+background-color: #f8f9fa;
+font-weight: 600;
+}
+
+/* Resources */
+
+
+
+#resources a {
+color: #f39c12;
+text-decoration: none;
+font-weight: 600;
+transition: color 0.3s ease;
+}
+
+#resources a:hover {
+color: #e67e22;
+text-decoration: underline;
+}
+
+
+/* Form Styles */
+form {
+background-color: #fff;
+padding: 30px;
+margin: 40px auto;
+max-width: 800px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+border: 1px solid #ddd; 
+}
+
+form label {
+font-weight: bold;
+color: #2c3e50;
+margin-bottom: 8px;
+display: block; /* Ensures the label takes full width */
+}
+
+form input,
+form textarea,
+form select {
+width: 100%;
+padding: 15px;
+margin-bottom: 18px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 1rem;
+background-color: #f9f9f9;
+transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+border-color: #f39c12;
+outline: none;
+box-shadow: 0 0 8px rgba(243, 156, 18, 0.4);
+}
+
+form button {
+background-color: #f39c12;
+color: white;
+border: none;
+padding: 14px 28px;
+border-radius: 8px;
+font-size: 1.1rem;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+background-color: #e67e22;
+transform: translateY(-3px);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form button:active {
+transform: translateY(0);
+}
+
+form textarea {
+min-height: 120
+}  
+
+.radio-group {
+display: flex;
+gap: 15px; 
+margin-bottom: 5px;
+}
+
+.radio-group input[type="radio"] {
+width: 15px; 
+height: 15px;
+margin: 0; 
+cursor: pointer;
+}
+
+.radio-group label {
+font-size: 1rem; 
+color: #333; 
+display: inline-block; 
+}
+
+
+
+/* Footer */
+footer {
+background-color: #2c3e50;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+border-radius: 10px 10px 0 0;
+}
+
+footer a {
+color: #ecf0f1;
+text-decoration: underline;
+}
+
+#current-date {
+font-size: 0.95rem;
+color: #ccc;
+margin-top: 10px;
+font-style: italic;
+}
+
+
+
